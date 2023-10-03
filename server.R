@@ -42,8 +42,6 @@ server <- function(input, output, session) {
         
         # Call your conversion function
         convert_to_BD_FacsDiva(input_file, output_file)
-        print("Done converting")
-        print(output_files)
       }
       shinyjs::runjs("$('#submit').addClass('stop');")  # Add the 'stop' class to stop the animation
       
