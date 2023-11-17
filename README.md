@@ -17,6 +17,6 @@ To quickly set up and run Attune2Diva, you can use our Docker container:
 
 ```bash
 docker pull georgealehandro/attune2diva:latest
-docker run -p 8080:8080 georgealehandro/attune2diva:latest
+docker run -d -p 8080:8080 georgealehandro/attune2diva:latest
 ```
 This will pull the latest version of Attune2Diva and run it on port 8080. Navigate to http://localhost:8080 in your browser to start using the tool.
