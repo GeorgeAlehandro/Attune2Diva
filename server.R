@@ -3,10 +3,8 @@ library(shinydashboard)
 library(shinyjs)
 library(flowCore)
 source("functions.R")
-
-server <- function(input, output, session) {
-  options(shiny.maxRequestSize = 10 * 1024^2)
-  
+options(shiny.maxRequestSize = 100000000*1024^2)
+server <- function(input, output, session) {  
   # Initialize a reactive value to store the log messages
   log_messages <- reactiveVal(list())
   # Observe if files are uploaded
